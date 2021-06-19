@@ -1,0 +1,9 @@
+.sign {
+  background-color: red;
+  width: 40px;
+  height: 16px;
+  font-size: 7px;
+  outline: none;
+  border: 0.5px solid red;
+  border-radius: 3px;
+}

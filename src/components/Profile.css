@@ -1,0 +1,93 @@
+.profileContainer {
+  width: 50%;
+  height: 70%;
+  padding: 10px;
+  margin-top: 25px;
+  border: 0.5px solid black;
+  font-size: 10px;
+  background-color: rgb(245, 239, 239);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.nouser {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: rgb(248, 114, 52);
+}
+.nouser .login {
+  height: 20px;
+  width: 80px;
+  color: rgb(248, 114, 52);
+  border: 0.5px solid rgb(248, 114, 52);
+  border-radius: 1px;
+}
+.nouser .login:active {
+  border: 0.5px solid black;
+}
+.addlist {
+  border: 0.5px solid rgb(190, 68, 11);
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 8px;
+  margin-bottom: 15px;
+}
+.cancel_btn {
+  width: 90%;
+  height: 15px;
+  outline: none;
+  background-color: rgb(230, 221, 221);
+  border: 0.5px solid rgb(190, 68, 11);
+  border-radius: 1px;
+  margin-right: 15px;
+}
+
+.edit_btn {
+  width: 90%;
+  height: 15px;
+  outline: none;
+  background-color: rgb(230, 221, 221);
+  border: 0.5px solid rgb(190, 68, 11);
+  border-radius: 1px;
+}
+.cancel_btn:active {
+  width: 92%;
+  height: 18px;
+  border: 0.5px solid grey;
+}
+.edit_btn:active {
+  width: 92%;
+  height: 18px;
+  border: 0.5px solid grey;
+}
+.cancel_container {
+  width: 42%;
+  height: 18px;
+  float: left;
+}
+.edit_container {
+  width: 42%;
+  height: 18px;
+  float: right;
+}
+.logout {
+  width: 60px;
+  height: 15px;
+  font-size: 8px;
+  background-color: rgb(218, 206, 206);
+  outline: none;
+  border: 0.5px solid rgb(190, 68, 11);
+}

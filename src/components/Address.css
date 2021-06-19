@@ -1,0 +1,98 @@
+.checkout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  margin: 15px;
+  border-radius: 2px;
+}
+.modalclosed {
+  display: none;
+}
+.modalopen {
+  width: 190px;
+  height: 220px;
+  top: 50px;
+  z-index: 1;
+  border: 0.5px solid black;
+  background-color: rgb(252, 217, 249);
+  position: fixed;
+  display: block;
+  left: 30%;
+}
+.addressform {
+  font-size: 10px;
+  padding: 5px;
+}
+.addressform input {
+  outline: none;
+  width: 95%;
+  height: 16px;
+  border: 0.5px solid grey;
+  margin-bottom: 8px;
+  font-size: 7px;
+  border-radius: 1px;
+}
+.addressform .submit {
+  width: 95%;
+  height: 16px;
+  outline: none;
+  margin-top: 8px;
+}
+.addressform input:focus {
+  border: 0.5px solid black;
+}
+#close {
+  float: right;
+  color: white;
+  font-size: 10px;
+}
+.content {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(250, 226, 226);
+  background-attachment: fixed;
+  border-left: 0.5px solid rgb(218, 211, 211);
+  border-right: 0.5px solid rgb(218, 211, 211);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.modalbutton {
+  width: 70px;
+  height: 15px;
+  font-size: 9px;
+  margin: 10px auto;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 30px;
+  opacity: 0.5;
+  background-color: rgb(200, 200, 200);
+}
+.addressform button {
+  font-size: 9px;
+}
+.addresslist {
+  margin-top: 10px;
+}
+.radiobtn {
+  width: 6px;
+  height: 6px;
+}
+.each {
+  display: block;
+  border: 0.5px solid rgb(218, 146, 146);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.each:hover {
+  border: 0.5px solid grey;
+}
+.each p {
+  font-size: 8px;
+}

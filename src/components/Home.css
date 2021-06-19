@@ -1,0 +1,82 @@
+body {
+  padding-top: 25px;
+}
+.image {
+  width: 130px;
+  height: 170px;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 600px) {
+  .image {
+    width: 100px;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+}
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 330px) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+.buttonStyle {
+  background: linear-gradient(to bottom, rgb(228, 190, 120), rgb(209, 159, 65));
+  font-size: 8px;
+  border: 0.01px solid black;
+  outline: none;
+  width: 60%;
+}
+.buttonStyle {
+  cursor: pointer;
+}
+.buttonStyle:active {
+  background-color: #ffa500;
+  border: 0.01px solid rgb(224, 150, 12);
+}
+.price {
+  font-size: 8px;
+  color: red;
+}
+.title {
+  font-size: 7px;
+  font-weight: 700;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.modal1 {
+  width: 210px;
+  height: 60px;
+  position: fixed;
+  background-color: steelblue;
+  z-index: 1;
+  margin: 18% 35%;
+  font-size: 9px;
+  text-align: center;
+}
+.modal1 i {
+  margin-top: 2px;
+  float: right;
+}
+.modal1 p {
+  margin-top: 15px;
+}
+.nomodal {
+  display: none;
+}

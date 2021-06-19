@@ -1,0 +1,22 @@
+.formcontainer1 {
+  width: 180px;
+  height: 200px;
+  background-color: rgb(236, 163, 230);
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 54px;
+  border-radius: 1px;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 8px;
+}
+.form2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form3 {
+  width: 95%;
+  height: 17px;
+  outline: none;
+}

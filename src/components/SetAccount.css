@@ -1,0 +1,26 @@
+.formcontainer {
+  width: 170px;
+  height: 220px;
+  background-color: rgb(236, 163, 230);
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 10px 54px;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: bold;
+}
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form1 {
+  width: 95%;
+  height: 17px;
+  outline: none;
+}
+.errors {
+  color: red;
+  font-size: 6px;
+}

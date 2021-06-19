@@ -1,0 +1,23 @@
+.location {
+  color: white;
+}
+.modal {
+  margin: auto;
+  background-color: grey;
+  position: fixed;
+  margin-left: 35%;
+  margin-top: 10%;
+  display: table;
+  height: 50%;
+  width: 25%;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+.heading {
+  background-color: rgb(44, 44, 85);
+  font-size: 8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,81 @@
+.orderscontainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orders {
+  width: 60%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid rgb(221, 215, 215);
+  margin-bottom: 15px;
+  background-color: rgb(241, 209, 194);
+  box-shadow: 0px 3px 54px rgb(0, 0, 0, 0.34);
+  padding: 5px;
+}
+.orders:hover {
+  border: 0.5px solid rgb(141, 136, 136);
+}
+.display {
+  width: 60vw;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
+  color: rgb(89, 89, 161);
+  padding: 10px;
+}
+.display img {
+  width: 50px;
+  height: 60px;
+}
+.display img:hover {
+  border: 0.1px solid rgb(141, 136, 136);
+}
+.orders p {
+  font-size: 9px;
+  color: saddlebrown;
+}
+.noorders {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: rgb(248, 114, 52);
+}
+.noorders img {
+  width: 60px;
+  height: 80px;
+  display: block;
+  margin: 11px auto;
+}
+
+.bagcontainer {
+  width: 104px;
+  height: 104px;
+  border: 1px solid rgb(168, 219, 168);
+  border-radius: 50%;
+}
+.goshopping {
+  height: 20px;
+  width: 80px;
+  color: rgb(248, 114, 52);
+  border: 0.5px solid rgb(248, 114, 52);
+  border-radius: 1px;
+}
+.goshopping:active {
+  border: 0.5px solid black;
+}
