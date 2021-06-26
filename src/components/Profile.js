@@ -1,31 +1,31 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react";
+import { connect, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import history from "../history";
 import "./Profile.css";
 
 const Profile = ({ user }) => {
-  const logOut = () => {
+  const log_out = () => {
     localStorage.clear();
-    history.push("/");
-  };
-  const addressList = () => {
-    return user.Address.map((add, i) => {
-      return (
-        <div className="addlist" key={i}>
-          <p>{`${add.name} ,Door-No:${add.doorno}`}</p>
-          <p>{`${add.street} ,${add.place} ,${add.pincode}`}</p>
-          <span className="cancel_container">
-            <button className="cancel_btn">cancel</button>
-          </span>
-          <span className="edit_container">
-            <button className="edit_btn">edit</button>
-          </span>
-        </div>
-      );
-    });
+    window.location.reload();
   };
   if (user) {
+    const addressList = () => {
+      return user.Address.map((add, i) => {
+        return (
+          <div className="addlist" key={i}>
+            <p>{`${add.name} ,Door-No:${add.doorno}`}</p>
+            <p>{`${add.street} ,${add.place} ,${add.pincode}`}</p>
+            <span className="cancel_container">
+              <button className="cancel_btn">cancel</button>
+            </span>
+            <span className="edit_container">
+              <button className="edit_btn">edit</button>
+            </span>
+          </div>
+        );
+      });
+    };
     return (
       <div className="profile">
         <div className="profileContainer">
@@ -34,7 +34,7 @@ const Profile = ({ user }) => {
           <p>Address:</p>
           <div>{addressList()}</div>
           <div>
-            <button className="logout" onClick={logOut}>
+            <button className="logout" onClick={log_out}>
               logOut
             </button>
           </div>

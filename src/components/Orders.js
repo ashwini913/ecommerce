@@ -18,9 +18,9 @@ function Orders({ user }) {
         </div>
       );
     } else {
-      return user.orders.map((item) => {
+      return user.orders.map((item, i) => {
         return (
-          <div className="orders">
+          <div className="orders" key={i}>
             <div className="display" key={item.id}>
               <Link to={`productview/${item.id}`}>
                 <img src={item.image} alt=""></img>

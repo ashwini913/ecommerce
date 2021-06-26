@@ -42,22 +42,20 @@ export const set_account = (formValues) => async (dispatch) => {
   history.push("/signin");
 };
 export const signIn = (formData) => async (dispatch) => {
-  console.log("form", formData);
   let response = await data.post("/login", { ...formData });
-  console.log(response);
+  console.log("response", response);
   localStorage.setItem("token", response.data.accessToken);
-  dispatch({ type: "SIGNIN" });
-};
-export const get_user = () => async (dispatch) => {
   let config = {
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   };
-  let token = localStorage.getItem("token");
+  let token = await localStorage.getItem("token");
+  console.log(token);
   let id = JSON.parse(atob(token.split(".")[1])).sub;
-  let response = await data.get(`/users/${id}`, config);
-  dispatch({ type: "GETUSER", payload: response.data });
+  let user = await data.get(`/users/${id}`);
+  console.log("user=>", user);
+  dispatch({ type: "SIGNIN", payload: user.data });
 };
 export const update_cart = (user, cart) => async (dispatch) => {
   let response = await data.patch(`/users/${user.id}`, { cart: cart });

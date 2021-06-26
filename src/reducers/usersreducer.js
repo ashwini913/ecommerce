@@ -1,17 +1,19 @@
 export const usersreducer = (state = {}, action) => {
   switch (action.type) {
-    case "GETUSER":
-      return { ...state, user: action.payload };
     case "SETACCOUNT":
       return { ...state };
     case "UPDATECART":
       return { ...state };
     case "SIGNIN":
-      return { ...state };
+      return { ...state, user: action.payload };
     case "UPDATEORDERS":
       return {
         ...state,
         user: action.payload.data,
+      };
+    case "LOGOUT":
+      return {
+        ...state,
       };
     case "ADD_ADDRESS":
       return {

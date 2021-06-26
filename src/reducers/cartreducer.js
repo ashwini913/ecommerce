@@ -50,7 +50,7 @@ export const cartreducer = (state = initialState, action) => {
         ),
         quantity: cart.reduce((a, b) => a + b.proquantity, 0),
       };
-    case "GETUSER":
+    case "SIGNIN":
       return {
         ...state,
         cart: action.payload.cart.cart,
