@@ -24,8 +24,8 @@ function ShoppingCart({ cart, user, total, orders }) {
       return (
         <div className="emptycart">
           <img
-            height="100px"
-            width="120px"
+            height="300px"
+            width="340px"
             alt=""
             src="https://www.crushnclex.com/assets/images/empty-shopping-cart.png"
           ></img>
@@ -36,22 +36,22 @@ function ShoppingCart({ cart, user, total, orders }) {
       <div key={item.id} className="item">
         <div>
           <Link to={`/productview/${item.id}`}>
-            <img alt="" src={item.image} height="70px" width="55px"></img>
+            <img alt="" src={item.image} height="120px" width="200px"></img>
           </Link>
         </div>
         <div
           className="carttitle"
           style={{
-            fontSize: "8px",
+            fontSize: "18px",
             color: "steelblue",
           }}
         >
           {item.title}
         </div>
-        <div style={{ fontSize: "8px", cursor: "pointer" }}>
+        <div style={{ fontSize: "18px", cursor: "pointer" }}>
           qty:{item.proquantity}
         </div>
-        <div style={{ fontSize: "9px", color: "red" }}>${item.price}</div>
+        <div style={{ fontSize: "20px", color: "red" }}>${item.price}</div>
         <button className="remove" onClick={() => onClicked(item)}>
           remove
         </button>

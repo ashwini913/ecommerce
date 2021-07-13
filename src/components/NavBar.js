@@ -18,7 +18,7 @@ function NavBar(props) {
       </Link>
       <Link to="/shoppingcart">
         <div className="shopping_cart">
-          <i className="ui shopping cart icon"></i>
+          <i className="ui large shopping cart icon"></i>
           <span>{props.quantity}</span>
         </div>
       </Link>

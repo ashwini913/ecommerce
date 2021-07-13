@@ -39,7 +39,12 @@ function MenuBar() {
       <div id={`${open ? "menu_bar_open" : "menu_bar_closed"}`}>
         {renderedList()}
       </div>
-      <i ref={ref} id="button" className="ui bars icon" onClick={onclicked}></i>
+      <i
+        ref={ref}
+        id="button"
+        className="ui big bars icon"
+        onClick={onclicked}
+      ></i>
     </div>
   );
 }

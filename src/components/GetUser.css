@@ -1,12 +1,12 @@
 .formcontainer1 {
-  width: 180px;
-  height: 200px;
+  width: 580px;
+  height: 500px;
   background-color: rgb(236, 163, 230);
   box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 54px;
-  border-radius: 1px;
-  font-size: 8px;
+  border-radius: 2px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 8px;
+  padding: 34px;
 }
 .form2 {
   width: 100vw;
@@ -17,6 +17,13 @@
 }
 .form3 {
   width: 95%;
-  height: 17px;
+  height: 40px;
   outline: none;
+  margin-bottom: 50px;
+}
+.signInBtn {
+  width: 80px;
+  height: 30px;
+  margin-bottom: 40px;
+  font-size: 18px;
 }

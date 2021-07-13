@@ -35,7 +35,7 @@ function Home({ cart, user, products, state }) {
       return (
         <div key={product.id} className="image">
           <Link to={`/productview/${product.id}`}>
-            <img alt="/" src={product.image} width="60px" height="60px" />{" "}
+            <img alt="/" src={product.image} width="150px" height="180px" />{" "}
           </Link>
           <p className="price">${product.price}</p>{" "}
           <Link to={`/productview/${product.id}`}>

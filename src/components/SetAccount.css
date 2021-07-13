@@ -1,11 +1,11 @@
 .formcontainer {
-  width: 170px;
-  height: 220px;
+  width: 500px;
+  height: 520px;
   background-color: rgb(236, 163, 230);
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.34) 0px 10px 54px;
-  padding: 5px;
-  font-size: 8px;
+  padding: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 .form {
@@ -17,10 +17,10 @@
 }
 .form1 {
   width: 95%;
-  height: 17px;
+  height: 40px;
   outline: none;
 }
 .errors {
   color: red;
-  font-size: 6px;
+  font-size: 14px;
 }

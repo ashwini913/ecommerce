@@ -28,12 +28,12 @@ export const add_to_cart = (id) => async (dispatch) => {
 export const remove_from_cart = (id) => async (dispatch) => {
   dispatch({ type: "REMOVE_FROM_CART", payload: id });
 };
-export const sign_in = () => async (dispatch, userId) => {
+/*export const sign_in = () => async (dispatch, userId) => {
   dispatch({ type: "SIGN_IN", payload: userId });
 };
 export const sign_out = () => async (dispatch) => {
   dispatch({ type: "SIGN_OUT" });
-};
+};*/
 export const set_account = (formValues) => async (dispatch) => {
   console.log("form1", formValues);
   let response = await data.post("/register", { ...formValues });
@@ -42,20 +42,24 @@ export const set_account = (formValues) => async (dispatch) => {
   history.push("/signin");
 };
 export const signIn = (formData) => async (dispatch) => {
-  let response = await data.post("/login", { ...formData });
-  console.log("response", response);
-  localStorage.setItem("token", response.data.accessToken);
-  let config = {
+  try {
+    let response = await data.post("/login", { ...formData });
+    console.log("response", response.status);
+    localStorage.setItem("token", response.data.accessToken);
+    /*let config = {
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
-  };
-  let token = await localStorage.getItem("token");
-  console.log(token);
-  let id = JSON.parse(atob(token.split(".")[1])).sub;
-  let user = await data.get(`/users/${id}`);
-  console.log("user=>", user);
-  dispatch({ type: "SIGNIN", payload: user.data });
+  };*/
+    let token = await localStorage.getItem("token");
+    console.log(token);
+    let id = JSON.parse(atob(token.split(".")[1])).sub;
+    let user = await data.get(`/users/${id}`);
+    console.log("user=>", user);
+    dispatch({ type: "SIGNIN", payload: user.data });
+  } catch (e) {
+    dispatch({ type: "SIGNIN_ERROR", payload: e.response.data });
+  }
 };
 export const update_cart = (user, cart) => async (dispatch) => {
   let response = await data.patch(`/users/${user.id}`, { cart: cart });

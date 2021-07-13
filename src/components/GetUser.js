@@ -5,12 +5,10 @@ import history from "../history";
 import { Link } from "react-router-dom";
 import "./GetUser.css";
 
-const GetUser = ({ cart, user }) => {
+const GetUser = ({ cart, user, error }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let dispatch = useDispatch();
-  let token = localStorage.getItem("token");
-  useEffect(() => {}, [token]);
   const handleChange = (event) => {
     let name = event.target.name;
     let value = event.target.value;
@@ -42,9 +40,10 @@ const GetUser = ({ cart, user }) => {
           value={password}
           className="form3"
         ></input>
-        <button>SignIn</button>
+        <button className="signInBtn">SignIn</button>
         <div></div>
         {console.log("user", user)}
+        <div style={{ color: "red" }}>{error.signinerror}</div>
         <Link to="/setaccount">New Account?</Link>
       </form>
     </div>
@@ -52,6 +51,6 @@ const GetUser = ({ cart, user }) => {
 };
 
 const mapStateToProps = (state) => {
-  return { user: state.user.user, cart: state.cart };
+  return { user: state.user.user, cart: state.cart, error: state.error };
 };
 export default connect(mapStateToProps, { signIn })(GetUser);
