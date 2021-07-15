@@ -58,7 +58,7 @@ function Home({ cart, user, products, state }) {
       }}
     >
       <div className={modal ? "modal1" : "nomodal"}>
-        <i className="ui small times icon" onClick={() => setModal(!modal)}></i>
+        <i className="ui large times icon" onClick={() => setModal(!modal)}></i>
         <p>please signin to add items to user cart</p>
       </div>
       <div
