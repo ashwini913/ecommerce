@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { signIn } from "../actions/index";
 import { connect, useDispatch } from "react-redux";
-import history from "../history";
 import { Link } from "react-router-dom";
 import "./GetUser.css";
 
