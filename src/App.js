@@ -42,7 +42,7 @@ function App() {
         <Switch>
           <Route path="/signin" exact component={GetUser} />
           <Route path={`/shoppingcart`} exact component={ShoppingCart} />
-          <Route path="/ecommerce" exact component={Home} />
+          <Route path="/ecommerce/" exact component={Home} />
           <Route path="/address" exact component={Address} />
           <Route path="/checkout" exact component={CheckOut}></Route>
           <Route path="/profile" exact component={Profile} />
