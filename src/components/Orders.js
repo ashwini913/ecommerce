@@ -12,7 +12,7 @@ function Orders({ user }) {
             <img src={image1} alt=""></img>
           </div>
           <p> no orders yet</p>
-          <Link to="/ecommerce">
+          <Link to="/">
             <button className="goshopping">Get started</button>
           </Link>
         </div>

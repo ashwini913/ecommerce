@@ -21,7 +21,7 @@ function MenuBar() {
     if (open) {
       return (
         <div className="menu">
-          <Link to="/ecommerce">
+          <Link to="/">
             <p>Home</p>
           </Link>
           <Link to="/orders">
