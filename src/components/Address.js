@@ -140,7 +140,7 @@ function CheckOut({ user }) {
           <button className="submit" type="submit">
             Add
           </button>
-          <div>hello</div>
+          <div>hi</div>
         </form>
       </div>
     </div>
